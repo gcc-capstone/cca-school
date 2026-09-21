@@ -1,3 +1,6 @@
+### Introduction
+Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
+
 ### Representative Tasks
 
 Since the goal is to fuctionally replace the school's current app, the representative tasks reflect the current used and needed fuctions.
