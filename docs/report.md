@@ -1,111 +1,71 @@
 # Pigeon Connect
+![Logo](./logo.png)
 
-![Pigeon Connect Logo](./logo.png)
+*Last updated: September 22nd, 2026*
 
-*Last updated: September 23, 2026*
-
-**Team Members:**
-
-* Peter Brumbach
-* John Bauer
-* Ella Kocher
-* Alissa Hoover
-* Lucas Sanderson
+**Lead Developer:**
+- Peter Brumbach
+- John Bauer
+- Ella Kocher
+- Alissa Hoover
+- Lucas Sanderson
 
 ## Introduction
-
-Pigeon Connect is a school communication system being developed for Central Christian Academy in Houston, Pennsylvania. The primary users are teachers, parents, and relevant school faculty and administrators. The system is intended to provide a centralized way for school staff and parents to communicate while keeping important student information accessible and up to date.
-
-The primary features of Pigeon Connect include student transportation management, communication between teachers and parents, and notifications distributed through multiple channels. Parents will be able to update their children's transportation arrangements, while teachers and administrators will be able to review and approve transportation changes. The system will also allow teachers and administrators to communicate with individual parents, groups of parents, or the entire school community when necessary.
+Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
 
 ## Representative Tasks
 
-The representative tasks below describe realistic situations that Pigeon Connect is intended to support. They focus on the goals of teachers, parents, and school administrators rather than prescribing a particular interface. These tasks reflect important communication and transportation needs that the current school application is intended to address.
+Since the goal is to fuctionally replace the school's current app, the representative tasks reflect the current used and needed fuctions.
 
-* **MVP:** Administrators can communicate with the entire school community.
+- **MVP:** Admins can contact all of the school.
+    - Lisa is an admin at the school. She has information that the date for the upcoming Christmas concert has been changed. Lisa is able to create a notification and send it out to all the parents, teachers, and other admins about this change so that the kids will be ready on the correct date. 
 
-  * Lisa is an administrator at the school and learns that the date of the upcoming Christmas concert has changed. She needs to notify parents, teachers, and other administrators of the new date so that everyone has accurate information about the event. Lisa creates a notification containing the updated information and distributes it to the appropriate members of the school community.
+- **MVP:** Teachers can contact the parents of all of the students in their class.
+    - As a science teacher, Mark enjoys having fun science experiements for the kids to do in class. Sometimes these experiements require the students to bring in something from home. Mark wants to do a science experiement involving paper towel rolls for class on Friday. It is currently Monday, but he wants to notify the parents so that the students have paper towel rolls for Friday. Mark is able to create a notification for his 3^rd^ period science class that will be sent out to the parents of that particular class and not all of his science classes. 
 
-* **MVP:** Teachers can communicate with the parents of students in their class.
+- Teachers can contact the parents of a particular student in a one-on-one conversation.
+    - Amanda Bright has been struggling in her 6^th^ grade math class. Her teacher, Ms. Roller, wants to meet with her parents to discuss some possible options to support Amanda better. Ms. Roller is able to start a new conversation in the app with only Amanda's parents so that they can talk out some options.
 
-  * Mark is a science teacher who plans to conduct an experiment involving paper towel rolls during his third-period class on Friday. Because students need to bring paper towel rolls from home, Mark wants to notify the parents of students in that particular class several days in advance. He sends a notification specifically to the parents of his third-period students rather than sending it to all of his science classes.
+- **MVP:** Parents can be contacted via the app, by email, or in printed form.
+    - Mary and John prefer to have physical records of important information so that they can pin it up on their cork board in the kitchen. When they began using the new app for their son's school, they noticed that they were able to receive notifications for the school in the app, by email, or in a printable form. Now, every time their son's teacher needs to communicate important information about upcoming dates and events, Mary and John are able to easily print the notification and pin it up next to their calendar in the kitchen.
 
-* **MVP:** Teachers can communicate with the parents of an individual student.
+- **MVP:** Parents can contact to communicate a change of transport for their child.
+    - Holly's father had an emergency come up that requires him to travel out of town for a meeting meaning he won't be at home in the evening when Holly gets off of her bus. He's contacted Holly's grandparents to watch her for the next few days. To communicate this change, Holly's father is able to contact the school through the app to update the school that his daughter will be picked up by her grandparents instead of taking the bus home. 
 
-  * Amanda Bright has been struggling in her sixth-grade mathematics class. Her teacher, Ms. Roller, wants to discuss possible ways to provide additional support for Amanda. Ms. Roller needs to communicate privately with Amanda's parents so that they can discuss the situation and possible options without involving the parents of other students.
+- **MVP:** Teachers can see the transportation status of the students on the dashboard of the app.
+    - It is the end of the school day and students are getting ready to leave. Mr. Smith, the homeroom teacher for the 10^th^ grade class, is getting ready to separate the kids by pickup, bus, and afterschool programs. Through the app, Mr. Smith is able to see on his dashboard the transportation status of each of his homeroom students. On this dashboard he sees that Holly was changed from bus line to parent pickup, so he's now able to make sure Holly is in the correct group of students and won't accidentally get on the bus home. 
 
-* **MVP:** Parents can receive school communications through the app, email, or printed form.
+- **MVP:** Two approvals by teachers/admins must be made before a student's end-of-day transportation status is updated accordingly on the dashboard.
+    - When Holly's father notified the school that Holly will be parent pickup and not on the bus, Lisa, the admin who received the phonecall, is able to create a transportation status change request and put in one approval for the request. Mr. Smith, Holly's end-of-day homeroom teacher, see this change request and give the second approval. On the app, then, Holly's transportation status on the dashboard is officially changed form bus line to parent pickup for the day. 
 
-  * Mary and John prefer to keep physical copies of important school information so that they can post them in their home. When using Pigeon Connect, they can receive school notifications through the application, by email, or in a printable format. When their son's teacher sends information about an upcoming event or important date, Mary and John can print the notification and keep it with their household calendar.
+- **MVP:** At the end of the school year, the app's database is archived and cleared with only the necessary/repetitive information kept to make room for the student database next school year.
+    - The school year is finally over and administration is beginning preparations for the next school year already. Steve, the school's IT expert is in charge of the system database. Steve is able to archive and save all of the records on database for this school year and clear the database to make room for next school year, so that when the student database is uploaded next year, the parents of the 5^th^ grade class won't still be receiving notifications for the 4^th^ grade class. Steve also ensures that the parents of new students will have their contact infomation uploaded into the system while parents of graduates won't be in the system anymore after the archive and wipe process.
 
-* **MVP:** Parents can communicate a change in transportation arrangements for their child.
 
-  * Holly's father has an unexpected work obligation that requires him to travel out of town. Because he will not be home when Holly normally arrives from school, he arranges for Holly's grandparents to care for her for the next several days. He needs to notify the school that Holly should be picked up by her grandparents instead of taking the bus home. He submits the transportation change through Pigeon Connect so that the school can review the updated arrangement.
-
-* **MVP:** Teachers can view the transportation status of their students from the application dashboard.
-
-  * At the end of the school day, Mr. Smith, the homeroom teacher for a tenth-grade class, needs to organize his students according to their transportation arrangements. He reviews the transportation status of each student on the application dashboard. He sees that Holly's transportation status has changed from bus transportation to parent pickup, allowing him to place her with the appropriate group of students and prevent her from being sent to the bus.
-
-* **MVP:** Two approvals from teachers or administrators are required before a student's transportation status is officially updated.
-
-  * Holly's father notifies the school that Holly needs to be picked up by her grandparents instead of taking the bus. Lisa, the administrator who receives the request, creates a transportation status change request and provides the first approval. Mr. Smith, Holly's homeroom teacher, reviews the request and provides the second approval. Once both approvals have been received, Holly's transportation status is updated from bus transportation to parent pickup for that day.
-
-* **MVP:** At the end of the school year, the application's database can be archived and prepared for the following school year while preserving necessary information.
-
-  * At the end of the school year, Steve, the school's IT administrator, prepares the system for the following year. He archives the records from the current school year and clears information that is no longer needed for active use. This prevents parents from continuing to receive notifications associated with their children's previous classes while allowing necessary records to be retained. Steve also ensures that information for newly enrolled students and their parents can be added for the upcoming school year and that graduated students are no longer included in the active student database.
 
 ## Related Work
 
-Several existing applications provide communication, transportation, or school-management features related to Pigeon Connect. Examining these systems helps identify interaction patterns and functionality that may be appropriate for the school's needs while also identifying features that are outside the intended scope of Pigeon Connect.
-
 ### ClassDojo
-
-ClassDojo is a website and application that supports communication between teachers, students, and parents. It provides features such as teacher-created calendar events and the ability to send images and other information that parents can view and interact with. These communication capabilities overlap with Pigeon Connect's goal of providing teachers and school staff with a way to communicate important information to parents.
-
-ClassDojo also includes features that are outside the current scope of Pigeon Connect. For example, teachers can award students points for behavior that parents can view. Pigeon Connect will instead focus on school-to-parent communication and transportation management. In particular, Pigeon Connect will provide school staff with tools for communicating transportation changes and reviewing those changes.
-
-ClassDojo also provides different communication options, including paid features. Pigeon Connect is intended to provide communication capabilities that are specifically tailored to the school's needs. For example, transportation changes submitted by parents will require review by appropriate school staff before they become official. This supports the transportation-related representative tasks described above and gives school staff a way to verify changes before they affect end-of-day student dismissal.
-
-ClassDojo's interface also provides an example of a clean and approachable design for school communication software. Examining this interface can help inform Pigeon Connect's communication features while keeping the system focused on the specific needs of the school.
+ClassDojo is a website and application that allows communication between teachers and students. It includes the ability for teachers to add calendar events and send images that parents can view and interact with. ClassDojo contains some elements that will not be included in our school communication application. An example is providing an option for students to gain points for behavior which is also viewable for parents. Our application will not have that feature, but will contain more options for better communication between school staff and parents on changing and viewing transportation updates. It will also contain more options for parents to decide how they want to recieve updates, such as through text or email. Our client already uses this application as an optional resource for parents to better communicate with parents. Our application would replace the communication aspects of ClassDojo, making them better suited towards the school's needs, specifically providing office staff to be included in transportation communication and sending out information to parents. CLassDojo has a very clean and inviting interface. It is a free application but has "plus" version that costs money. Our application may be able to add some of these costly features for free. One example is that our application will show if transportation changes from a parent have been reviewed. ClassDojo requires payment for the "plus" subscription to see if a message has been viewed by a teacher or not. Our school communication application will be able to add free features matching the school's specific needs (ClassDojo).
 
 ### Pikmykid
-
-Pikmykid is a school safety and dismissal-management platform that provides features related to student transportation, including tools for managing dismissal, student hall passes, and emergency reunification. Its transportation functionality is particularly relevant to Pigeon Connect because it allows parents to communicate changes to how their children will leave school.
-
-For example, Pikmykid allows parents to make same-day or future changes to their child's transportation arrangements, such as indicating that a student will be picked up by a parent rather than taking the bus. Pigeon Connect will support a similar task while also incorporating communication features between parents, teachers, and school administrators.
-
-Pikmykid also provides functionality for ensuring that students are released to the correct adults and for allowing parents to check in when they arrive to pick up their children. These features may provide useful ideas for future improvements to Pigeon Connect as the team gathers additional information from teachers and administrators at the school. They are not currently part of the primary scope of the application.
-
-A significant difference is that Pikmykid is a commercial platform that schools must purchase, whereas Pigeon Connect is being developed specifically for the client's requirements. This allows the project to focus on the transportation and communication functions that Central Christian Academy identifies as important rather than requiring the school to adopt a larger set of features.
+Pikmykid is a website that is focused on school safety. It provides student hall passes, tools to help transportation run smoothly, emergency reunification systems, and more. Our school communictaion application relates to this website in the way it handles changing student transportation needs. It provides a way for parents to make same day or future changes for how their child needs to get home, such as being picked up by a parent or riding the bus. This is exactly what our application will do, as well as our application having other communication functions. Pikmykid has some features that may be useful additions in the future to our applicatin as we spend more time collecting information from current teachers at Central Christian Academy. An example is making sure students get released to the correct adult and provides a way for parents to check in when they arrive to pick up their child. These features are not the focus of our application, but may be discussed as future additions. Parents can download this application for free, but it is not free for schools to use. Purchasing this application would help solve Central Christian Academy's transportation issues, but they would be paying for more tools than they may actually need. We will be able to provide the exact features the school would like for free (Pikmykid).
 
 ### School Dismissal Manager
-
-School Dismissal Manager is an application focused specifically on managing student transportation and dismissal. It allows parents to update their children's transportation arrangements and provides tools for managing student pickup. It also provides notifications related to transportation changes.
-
-These capabilities overlap with Pigeon Connect's transportation functionality. Both systems allow parents to communicate transportation changes and provide school staff with information about those changes. However, the systems differ in how transportation changes are communicated and reviewed.
-
-School Dismissal Manager can notify teachers about transportation changes at the end of the school day. Pigeon Connect is intended to support a review process in which transportation changes require approval from teachers or administrators before the student's official transportation status changes. This directly supports the representative task in which two school staff members review a parent's transportation request.
-
-School Dismissal Manager also provides administrators with the ability to establish a deadline after which parents can no longer make transportation changes. This is a potentially useful feature for Pigeon Connect because it could help prevent late transportation changes from disrupting the dismissal process.
-
-Unlike School Dismissal Manager, Pigeon Connect is intended to combine transportation management with broader communication between parents and school staff. This would allow the school to address transportation and general communication needs through the same system rather than requiring separate applications for those functions.
+School Dismissal Manager is an application made to fix issues specifically in student transportation in schools. It allows for parents to have an application on their phone to make updates about their child's transportation needs. It also provides a system to handle lines of cars that are waiting to pick up students. It provides some of the same features our school communication applciation will provide such as updating teachers on student tranportation changes through the applciation and has app notifications sent to parents. One major difference in the way teachers will be notified of changes is that teachers are only notified of all student transportation changes at the end of the day. Our application will have the changes need approval from the teacher and/or office administrators (admin) and will notify the teacher when the request comes, not all at once at the end of the day. School Dismissal Manager has an out of date interface as well as not providing the option of parents using it through a website, not just an application needing to be installed on their phone. It does provide the option of the admin setting a time by which parents can no langer make changes. This would be a useful feature for our application. It is not free to use and does not offer an option for communication between parents and teachers that is not dismissal related. Central Christian Academy would need to purchase this application as well as a communication application to fix all of their needs. This makes things potentially harder and more confusing more staff and parents to need multiple apps or websites to have good and clear communication. Our school communication application will fulfill both of these needs for the school for free (SchoolDismissalManager).
 
 ### Seesaw
+Seesaw is an application and website that provides many resources for schools focused on helping students learn. It provides teacher-led AI, learning activities and tools for students, communication tools between parents and teachers, and more. Our school communication application will not contain all of these features, but will focus on the same communication type tools that it provides. It allows for teachers to send out reminders to parents which they can interact with as well as back and forth messaging betweena parent and teacher. Something interesting Seesaw provides is analytics on student performance. While our application is not focused on student performance, it may include a similar feature of viewing analytics on parent commmunicatin changes throughout the year. Seesaw also allows messages to be translated to differnt languages to help make communication clearer and more inclusive which may be a beneficial feature to our application. It is a free application but has premium features for teachers that can be purchased. While this application provides a lot more tools than ours, it has a very similar communication piece that will be included in our application as well as our transportation communication tool (SeeSaw).
 
-Seesaw is an application and website that provides educational resources and communication tools for schools. It includes teacher-led learning activities, student resources, parent-teacher communication, and other educational features. Although Pigeon Connect will not attempt to provide Seesaw's full set of educational capabilities, its communication features are relevant to the proposed system.
 
-Seesaw allows teachers to send reminders and communicate with parents through the application. It also supports two-way messaging between teachers and parents, which is similar to Pigeon Connect's goal of allowing teachers to communicate with individual students' parents when a private conversation is necessary.
 
-Seesaw also provides features such as analytics related to student performance and message translation. Student-performance analytics are outside the current scope of Pigeon Connect, although the concept of providing analytics could potentially inform future features for examining communication or transportation activity. Translation functionality may also be useful in the future because it could help make communication more accessible to families who speak different languages.
-
-The primary distinction between Seesaw and Pigeon Connect is the focus of each system. Seesaw is designed as a broader educational platform, while Pigeon Connect is specifically focused on communication between school staff and parents and on managing student transportation. Examining Seesaw therefore provides useful examples of parent-teacher communication without requiring Pigeon Connect to adopt its broader educational functionality.
 
 ## Bibliography
 
-ClassDojo. "ClassDojo Plus." *ClassDojo*, https://www.classdojo.com/plus/. Accessed 20 Sept. 2026.
+ClassDojo. "ClassDojo Plus." ClassDojo, https://www.classdojo.com/plus/. Accessed 20 Sept. 2026.
 
-Pikmykid. "Dismissal Management." *Pikmykid*, https://www.pikmykid.com/solutions/dismissal-management. Accessed 20 Sept. 2026.
+Pikmykid. "Dismissal Management." Pikmykid, https://www.pikmykid.com/solutions/dismissal-management. Accessed 20 Sept. 2026.
 
-SchoolDismissalManager. "How It Works." *SchoolDismissalManager*, https://www.schooldismissalmanager.com/HowItWorks.aspx. Accessed 20 Sept. 2026.
+SchoolDismissalManager. "How It Works." SchoolDismissalManager, https://www.schooldismissalmanager.com/HowItWorks.aspx. Accessed 20 Sept. 2026.
 
-Seesaw. "Seesaw." *Seesaw*, https://seesaw.com/. Accessed 20 Sept. 2026.
+Seesaw. "Seesaw." Seesaw, https://seesaw.com/. Accessed 20 Sept. 2026.
