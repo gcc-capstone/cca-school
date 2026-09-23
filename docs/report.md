@@ -1,3 +1,15 @@
+# Pigeon Connect
+![Logo](./logo.png)
+
+*Last updated: September 22nd, 2026*
+
+**Lead Developer:**
+- Peter Brumbach
+- John Bauer
+- Ella Kocher
+- Alissa Hoover
+- Lucas Sanderson
+
 ## Introduction
 Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
 
