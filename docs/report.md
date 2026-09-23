@@ -1,9 +1,9 @@
 # Pigeon Connect
 ![Logo](./logo.png)
 
-*Last updated: September 22nd, 2026*
+*Last updated: September 23rd, 2026*
 
-**Lead Developer:**
+**Team Members:**
 - Peter Brumbach
 - John Bauer
 - Ella Kocher
@@ -11,7 +11,9 @@
 - Lucas Sanderson
 
 ## Introduction
-Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
+Central Christian Academy in Houston, PA needs a single, reliable way for its staff and families to communicate about students and their daily transportation arrangements. Pigeon Connect is a school communication platform designed to replace the academy's current communication app, giving teachers, parents, and administrators one place to share information about students and keep transportation status accurate and up to date. The system's primary users are the school's teachers and administrative staff, along with the parents and guardians of enrolled students.
+
+Pigeon Connect's main features center on messaging and transportation management. Administrators can send announcements to the entire school, and teachers can message the parents of an entire class or start a one-on-one conversation with a specific family; parents can choose to receive these messages in the app, by email, or in a printable format. Parents can also notify the school of a change to their child's after-school transportation, such as switching from the bus to being picked up by a relative. Because an incorrect change could send a student home the wrong way, any transportation update requires approval from two staff members before it appears on a dashboard that shows teachers the current transportation status of each student in their homeroom.
 
 ## Representative Tasks
 
