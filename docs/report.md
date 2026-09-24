@@ -18,8 +18,17 @@ Pigeon Connect's main features center on messaging and transportation management
 ## Representative Tasks
 Because Pigeon Connect is intended to replace the school's current communication app, these representative tasks reflect the functions parents, teachers, and administrators currently rely on and will continue to need.
 
+- **MVP:** Admins can view all students in the school.
+Lisa is an admin at the school. She recieves a call from Jill's parents. They don't know if they have an account in Pigeon Connect, so they ask Lisa to check for them. After logging on, she can see every account affiliated with the school. She locates Jill's account, and confirms to the parents that Jill is in the system.
+
+- **MVP:** Teachers can view all students in their classes.
+Mark, a science teacher, is trying to learn all the names of the students in his classes. Although he is usually great at remembering names, a few students from his chemistry class keep slipping out of his memory. He logs into Pigeon Connect and locates his chemistry class, and finds the names of three students he forgot.
+
 - **MVP**: Admins can contact all of the school.
 Lisa, an administrator at the school, learns that the date of the upcoming Christmas concert has changed. She needs to notify all parents, teachers, and other administrators so that students arrive prepared on the correct date. Lisa creates a notification and sends it to everyone in the school.
+
+- **MVP:** Teachers can contact the parents of a particular student in a one-on-one conversation.
+Amanda Bright has been struggling in her 6^th^ grade math class. Her teacher, Ms. Roller, wants to meet with her parents to discuss some possible options to support Amanda better. Ms. Roller is able to start a new conversation in the app with only Amanda's parents so that they can talk out some options.
 
 - **MVP**: Teachers can contact the parents of all of the students in their class.
 Mark, a science teacher, is planning a Friday experiment for his third-period class that requires students to bring in paper towel rolls from home. Since it is only Monday, he wants to notify those parents early enough for their children to bring the item in on time. Mark creates a notification for his third-period class specifically, so parents in his other science sections do not receive it.
@@ -40,6 +49,15 @@ When Holly's father calls to report the change, Lisa, the admin who takes the ca
 
 - **MVP**: At the end of the school year, the app's database is archived and cleared with only the necessary/repetitive information kept to make room for the student database next school year.
 As the school year ends, administration begins preparing for the next one. Steve, the school's IT administrator, is responsible for maintaining the system database. He archives and saves this year's records, then clears the database to make room for the following year, ensuring that, for example, parents of next year's fifth graders no longer receive notifications meant for fourth graders. Steve also confirms that incoming students' contact information is uploaded to the system and that graduating students' families are removed from it.
+
+- Teachers can schedule events for their class.
+Mr. Allen, a eighth grade science teacher, wants to take his students on a field trip to Carnegie Science Center. Using the app, he creates an event entry visible to all parents in the class.
+
+- Admin can schedule events for the school.
+Lisa, an admin for the school, wants to alert all parents about the Fall Ball coming up in a month. Using the app, she creates an event entry so that parents know when the Fall Ball is happening.
+
+- All users can view their respective calendars.
+Dave, a parent of an eighth grade student and a highschool junior, wants to know if there are any events coming up that he should be aware of. After logging onto the app, he views his calendar, which displays a field trip for his eight-grader and a dance for his highschool junior.
 
 
 
