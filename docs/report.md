@@ -1,7 +1,7 @@
 # Pigeon Connect
 ![Logo](./logo.png)
 
-*Last updated: September 24nd, 2026*
+*Last updated: September 24th, 2026*
 
 **Team Members:**
 - Peter Brumbach
