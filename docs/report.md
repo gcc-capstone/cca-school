@@ -1,9 +1,9 @@
 # Pigeon Connect
 ![Logo](./logo.png)
 
-*Last updated: September 22nd, 2026*
+*Last updated: September 24th, 2026*
 
-**Lead Developer:**
+**Team Members:**
 - Peter Brumbach
 - John Bauer
 - Ella Kocher
@@ -11,7 +11,10 @@
 - Lucas Sanderson
 
 ## Introduction
-Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
+
+Pigeon Connect is a school communication application being developed for our client, Central Christian Academy in Houston, PA, to replace the school's current app. The purpose of this project is to streamline communication among teachers, parents, and administrators and to keep student information, particularly transportation arrangements, accurate and accessible to everyone who needs it. The target users are the teachers and parents associated with the school, along with the administrators and other faculty who send school-wide announcements and manage student records. Because student information changes frequently, the application is designed so that it can be updated as needed.
+
+The main features of Pigeon Connect support communication and transportation management. Teachers and parents can exchange direct messages, and teachers and administrators can send announcements to a single class or to the entire school. Parents choose how they receive these notifications: through the app, by email, or in a printable form. For transportation, parents can update their child's transportation type when plans change, and teachers and administrators must approve each change before it appears on the transportation dashboard that teachers use at the end of the school day.
 
 ## Representative Tasks
 
