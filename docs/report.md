@@ -17,13 +17,19 @@ Our client is Central Christian School in Houston, PA. Target users are teachers
 
 Since the goal is to fuctionally replace the school's current app, the representative tasks reflect the current used and needed fuctions.
 
+- **MVP:** Admins can view all students in the school.
+    - Lisa is an admin at the school. She recieves a call from Jill's parents. They don't know if they have an account in Pigeon Connect, so they ask Lisa to check for them. After logging on, she can see every account affiliated with the school. She locates Jill's account, and confirms to the parents that Jill is in the system.
+
+- **MVP:** Teachers can view all students in their classes.
+    - Mark, a science teacher, is trying to learn all the names of the students in his classes. Although he is usually great at remembering names, a few students from his chemistry class keep slipping out of his memory. He logs into Pigeon Connect and locates his chemistry class, and finds the names of three students he forgot.
+
 - **MVP:** Admins can contact all of the school.
     - Lisa is an admin at the school. She has information that the date for the upcoming Christmas concert has been changed. Lisa is able to create a notification and send it out to all the parents, teachers, and other admins about this change so that the kids will be ready on the correct date. 
 
 - **MVP:** Teachers can contact the parents of all of the students in their class.
     - As a science teacher, Mark enjoys having fun science experiements for the kids to do in class. Sometimes these experiements require the students to bring in something from home. Mark wants to do a science experiement involving paper towel rolls for class on Friday. It is currently Monday, but he wants to notify the parents so that the students have paper towel rolls for Friday. Mark is able to create a notification for his 3^rd^ period science class that will be sent out to the parents of that particular class and not all of his science classes. 
 
-- Teachers can contact the parents of a particular student in a one-on-one conversation.
+- **MVP:** Teachers can contact the parents of a particular student in a one-on-one conversation.
     - Amanda Bright has been struggling in her 6^th^ grade math class. Her teacher, Ms. Roller, wants to meet with her parents to discuss some possible options to support Amanda better. Ms. Roller is able to start a new conversation in the app with only Amanda's parents so that they can talk out some options.
 
 - **MVP:** Parents can be contacted via the app, by email, or in printed form.
@@ -41,7 +47,14 @@ Since the goal is to fuctionally replace the school's current app, the represent
 - **MVP:** At the end of the school year, the app's database is archived and cleared with only the necessary/repetitive information kept to make room for the student database next school year.
     - The school year is finally over and administration is beginning preparations for the next school year already. Steve, the school's IT expert is in charge of the system database. Steve is able to archive and save all of the records on database for this school year and clear the database to make room for next school year, so that when the student database is uploaded next year, the parents of the 5^th^ grade class won't still be receiving notifications for the 4^th^ grade class. Steve also ensures that the parents of new students will have their contact infomation uploaded into the system while parents of graduates won't be in the system anymore after the archive and wipe process.
 
+- Teachers can schedule events for their class.
+    - Mr. Allen, a eighth grade science teacher, wants to take his students on a field trip to Carnegie Science Center. Using the app, he creates an event entry visible to all parents in the class.
 
+- Admin can schedule events for the school.
+    - Lisa, an admin for the school, wants to alert all parents about the Fall Ball coming up in a month. Using the app, she creates an event entry so that parents know when the Fall Ball is happening.
+
+- All users can view their respective calendars.
+    - Dave, a parent of an eighth grade student and a highschool junior, wants to know if there are any events coming up that he should be aware of. After logging onto the app, he views his calendar, which displays a field trip for his eight-grader and a dance for his highschool junior.
 
 ## Related Work
 
