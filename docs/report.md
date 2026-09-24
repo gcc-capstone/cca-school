@@ -18,46 +18,46 @@ The main features of Pigeon Connect support communication and transportation man
 
 ## Representative Tasks
 
-Since the goal is to fuctionally replace the school's current app, the representative tasks reflect the current used and needed fuctions.
+Pigeon Connect is intended to functionally replace the school's current communication app, so the representative tasks below reflect the functions the school currently uses and needs. Each task describes a realistic goal for one of the application's target users: administrators, teachers, or parents. Tasks marked **MVP** are the ones the team currently expects to support in the minimum viable product. This designation is tentative and may change as the project scope is refined.
 
 - **MVP:** Admins can view all students in the school.
-    - Lisa is an admin at the school. She recieves a call from Jill's parents. They don't know if they have an account in Pigeon Connect, so they ask Lisa to check for them. After logging on, she can see every account affiliated with the school. She locates Jill's account, and confirms to the parents that Jill is in the system.
+    - Lisa is an admin at the school. She receives a call from Jill's parents. They do not know whether they have an account in Pigeon Connect, so they ask Lisa to check for them. After logging on, she can see every account affiliated with the school. She locates Jill's account and confirms to the parents that Jill is in the system.
 
 - **MVP:** Teachers can view all students in their classes.
-    - Mark, a science teacher, is trying to learn all the names of the students in his classes. Although he is usually great at remembering names, a few students from his chemistry class keep slipping out of his memory. He logs into Pigeon Connect and locates his chemistry class, and finds the names of three students he forgot.
+    - Mark, a science teacher, is trying to learn the names of all the students in his classes. Although he is usually great at remembering names, a few students from his chemistry class keep slipping his mind. He logs into Pigeon Connect, locates his chemistry class, and finds the names of the three students he forgot.
 
-- **MVP:** Admins can contact all of the school.
-    - Lisa is an admin at the school. She has information that the date for the upcoming Christmas concert has been changed. Lisa is able to create a notification and send it out to all the parents, teachers, and other admins about this change so that the kids will be ready on the correct date. 
+- **MVP:** Admins can contact everyone associated with the school.
+    - Lisa is an admin at the school. She learns that the date of the upcoming Christmas concert has changed. She creates a notification and sends it to all the parents, teachers, and other admins so that the students will be ready on the correct date.
 
-- **MVP:** Teachers can contact the parents of all of the students in their class.
-    - As a science teacher, Mark enjoys having fun science experiements for the kids to do in class. Sometimes these experiements require the students to bring in something from home. Mark wants to do a science experiement involving paper towel rolls for class on Friday. It is currently Monday, but he wants to notify the parents so that the students have paper towel rolls for Friday. Mark is able to create a notification for his 3^rd^ period science class that will be sent out to the parents of that particular class and not all of his science classes. 
+- **MVP:** Teachers can contact the parents of all the students in one of their classes.
+    - As a science teacher, Mark enjoys giving his students fun experiments to do in class. Sometimes these experiments require students to bring in something from home. Mark wants to do an experiment involving paper towel rolls on Friday. It is currently Monday, and he wants to notify the parents so that their children have paper towel rolls in time. Mark creates a notification for his third-period science class that is sent to the parents of that class only, not to the parents of all his science classes.
 
 - **MVP:** Teachers can contact the parents of a particular student in a one-on-one conversation.
-    - Amanda Bright has been struggling in her 6^th^ grade math class. Her teacher, Ms. Roller, wants to meet with her parents to discuss some possible options to support Amanda better. Ms. Roller is able to start a new conversation in the app with only Amanda's parents so that they can talk out some options.
+    - Amanda Bright has been struggling in her sixth-grade math class. Her teacher, Ms. Roller, wants to meet with Amanda's parents to discuss options for supporting her better. Ms. Roller messages only Amanda's parents so that they can talk through the options.
 
-- **MVP:** Parents can be contacted via the app, by email, or in printed form.
-    - Mary and John prefer to have physical records of important information so that they can pin it up on their cork board in the kitchen. When they began using the new app for their son's school, they noticed that they were able to receive notifications for the school in the app, by email, or in a printable form. Now, every time their son's teacher needs to communicate important information about upcoming dates and events, Mary and John are able to easily print the notification and pin it up next to their calendar in the kitchen.
+- **MVP:** Parents can receive communications from the school through the app, by email, or in printed form.
+    - Mary and John prefer to have physical records of important information so that they can pin it to the cork board in their kitchen. When they began using the new app for their son's school, they noticed that they could receive notifications from the school in the app, by email, or in a printable form. Now, every time their son's teacher communicates important information about upcoming dates and events, Mary and John easily print the notification and pin it next to their calendar in the kitchen.
 
-- **MVP:** Parents can contact to communicate a change of transport for their child.
-    - Holly's father had an emergency come up that requires him to travel out of town for a meeting meaning he won't be at home in the evening when Holly gets off of her bus. He's contacted Holly's grandparents to watch her for the next few days. To communicate this change, Holly's father is able to contact the school through the app to update the school that his daughter will be picked up by her grandparents instead of taking the bus home. 
+- **MVP:** Parents can contact the school to communicate a change of transportation for their child.
+    - Holly's father has an emergency that requires him to travel out of town for a meeting, so he will not be home in the evening when Holly gets off her bus. He has asked Holly's grandparents to watch her for the next few days. To communicate this change, Holly's father contacts the school through the app to say that his daughter will be picked up by her grandparents instead of taking the bus home.
 
-- **MVP:** Teachers can see the transportation status of the students on the dashboard of the app.
-    - It is the end of the school day and students are getting ready to leave. Mr. Smith, the homeroom teacher for the 10^th^ grade class, is getting ready to separate the kids by pickup, bus, and afterschool programs. Through the app, Mr. Smith is able to see on his dashboard the transportation status of each of his homeroom students. On this dashboard he sees that Holly was changed from bus line to parent pickup, so he's now able to make sure Holly is in the correct group of students and won't accidentally get on the bus home. 
+- **MVP:** Teachers can see the transportation status of their students on the dashboard of the app.
+    - It is the end of the school day, and students are getting ready to leave. Mr. Smith, the homeroom teacher for the tenth-grade class, needs to separate the students into groups for pickup, bus, and after-school programs. Through the app, he sees the transportation status of each of his homeroom students on his dashboard. He notices that Holly was changed from bus line to parent pickup, so he can make sure she is in the correct group and does not accidentally get on the bus home.
 
-- **MVP:** Two approvals by teachers/admins must be made before a student's end-of-day transportation status is updated accordingly on the dashboard.
-    - When Holly's father notified the school that Holly will be parent pickup and not on the bus, Lisa, the admin who received the phonecall, is able to create a transportation status change request and put in one approval for the request. Mr. Smith, Holly's end-of-day homeroom teacher, see this change request and give the second approval. On the app, then, Holly's transportation status on the dashboard is officially changed form bus line to parent pickup for the day. 
+- **MVP:** Two approvals by teachers or admins must be made before a student's end-of-day transportation status is updated on the dashboard.
+    - When Holly's father notifies the school that Holly will be parent pickup and not on the bus, Lisa, the admin who received the phone call, creates a transportation status change request and enters one approval for it. Mr. Smith, Holly's end-of-day homeroom teacher, sees the change request and gives the second approval. Holly's transportation status on the dashboard is then officially changed from bus line to parent pickup for the day.
 
-- **MVP:** At the end of the school year, the app's database is archived and cleared with only the necessary/repetitive information kept to make room for the student database next school year.
-    - The school year is finally over and administration is beginning preparations for the next school year already. Steve, the school's IT expert is in charge of the system database. Steve is able to archive and save all of the records on database for this school year and clear the database to make room for next school year, so that when the student database is uploaded next year, the parents of the 5^th^ grade class won't still be receiving notifications for the 4^th^ grade class. Steve also ensures that the parents of new students will have their contact infomation uploaded into the system while parents of graduates won't be in the system anymore after the archive and wipe process.
+- **MVP:** At the end of the school year, the app's database is archived and cleared, keeping only the necessary and recurring information, to make room for the next school year's student database.
+    - The school year is over, and administration is already preparing for the next one. Steve, the school's IT expert, is in charge of the system database. He archives all of the records from this school year and clears the database so that, when next year's student database is uploaded, the parents of the fifth-grade class will not still receive notifications meant for the fourth-grade class. Steve also ensures that the contact information of new students' parents is uploaded into the system, while the parents of graduates are no longer in the system after the archive and clearing process.
 
 - Teachers can schedule events for their class.
-    - Mr. Allen, a eighth grade science teacher, wants to take his students on a field trip to Carnegie Science Center. Using the app, he creates an event entry visible to all parents in the class.
+    - Mr. Allen, an eighth-grade science teacher, wants to take his students on a field trip to the Carnegie Science Center. Using the app, he creates an event entry that is visible to all the parents in the class.
 
-- Admin can schedule events for the school.
+- Admins can schedule events for the school.
     - Lisa, an admin for the school, wants to alert all parents about the Fall Ball coming up in a month. Using the app, she creates an event entry so that parents know when the Fall Ball is happening.
 
 - All users can view their respective calendars.
-    - Dave, a parent of an eighth grade student and a highschool junior, wants to know if there are any events coming up that he should be aware of. After logging onto the app, he views his calendar, which displays a field trip for his eight-grader and a dance for his highschool junior.
+    - Dave is the parent of an eighth-grade student and a high school junior. He wants to know whether any upcoming events require his attention. After logging onto the app, he views his calendar, which displays a field trip for his eighth grader and a dance for his high school junior.
 
 ## Related Work
 
