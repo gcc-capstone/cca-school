@@ -1,9 +1,9 @@
 # Pigeon Connect
 ![Logo](./logo.png)
 
-*Last updated: September 22nd, 2026*
+*Last updated: September 24nd, 2026*
 
-**Lead Developer:**
+**Team Members:**
 - Peter Brumbach
 - John Bauer
 - Ella Kocher
@@ -11,7 +11,10 @@
 - Lucas Sanderson
 
 ## Introduction
-Our client is Central Christian School in Houston, PA. Target users are teachers and parents associated with the school as well as relevant faculty. The purpose of the software we are developing is to allow communication between teachers and parents, as well as to have various information pertaining to students easily accessible for both. It is important that information is updatable as needed. Main features include displaying transportation info regarding students, parents being able to update their children's transportation type, and direct messaging between parents and teachers.
+
+Pigeon Connect is a school communication application being developed for our client, Central Christian Academy in Houston, PA. Its purpose is to let teachers and parents communicate directly and to give both groups easy access to current information about students. The target users are the teachers and parents associated with the school, as well as administrators and other faculty who need to reach them.
+
+The main features of Pigeon Connect center on communication and student transportation. Teachers and parents can exchange direct messages. Users can view each student's transportation information, and parents can update their child's transportation type when plans change. Because this information changes frequently, the application allows it to be updated as needed.
 
 ## Representative Tasks
 
