@@ -16,6 +16,7 @@ import ClassesPage from './pages/ClassesPage'
 import ClassRoster from './pages/ClassRoster'
 import SendToClass from './pages/SendToClass'
 import SendToChild from './pages/SendToChild'
+import AllStudents from './pages/AllStudents'
 import TransportRequests from './pages/TransportRequests'
 import SendSchoolAnnouncement from './pages/SendSchoolAnnouncement'
 
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="classes/:classId/send" element={<SendToClass />} />
             <Route path="classes/:classId/students/:childId/send" element={<SendToChild />} />
             {/* Admin */}
+            <Route path="students" element={<AllStudents />} />
             <Route path="transportation" element={<TransportRequests />} />
             <Route path="send" element={<SendSchoolAnnouncement />} />
           </Route>

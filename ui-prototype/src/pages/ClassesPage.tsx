@@ -5,9 +5,15 @@ import { useRole } from '../useRole'
 
 export default function ClassesPage() {
   const role = useRole()
+  const isAdmin = role === 'admin'
   return (
-    <>
-      <PageHeader title="My Classes" subtitle="Select a class to see its students and send announcements." />
+         <>
+      <PageHeader
+        title={isAdmin ? 'All Classes' : 'My Classes'}
+        subtitle={isAdmin
+          ? 'Every class in the school. Select one to see its students.'
+          : 'Select a class to see its students and send announcements.'}
+      />
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
         {classes.map((c) => (
           <div className="col" key={c.id}>
