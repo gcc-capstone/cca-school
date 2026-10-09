@@ -1,5 +1,7 @@
 import PageHeader from '../components/PageHeader'
+import { requestsForRole } from '../requestsForRole'
 import { useSession } from '../session'
+import { useRole } from '../useRole'
 
 const statusBadge = {
   pending: 'text-bg-warning',
@@ -8,12 +10,24 @@ const statusBadge = {
 }
 
 export default function TransportRequests() {
-  const { requests, decideRequest } = useSession()
+  const { requests: allRequests, decideRequest } = useSession()
+  const role = useRole()
+  const requests = requestsForRole(allRequests, role)
   const pending = requests.filter((r) => r.status === 'pending').length
 
   return (
     <>
-      <PageHeader title="Transportation Requests" subtitle={`${pending} waiting for review`} />
+      <PageHeader
+        title="Transportation Requests"
+        subtitle={
+          role === 'teacher'
+            ? `${pending} waiting for review from students in your classes`
+            : `${pending} waiting for review`
+        }
+      />
+      {requests.length === 0 && (
+        <p className="text-body-secondary">No transportation requests for your students.</p>
+      )}
       <div className="row row-cols-1 g-3">
         {requests.map((r) => (
           <div className="col" key={r.id}>

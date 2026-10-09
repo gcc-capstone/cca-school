@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useSession } from '../session'
 import type { Role } from '../types'
+import { requestsForRole } from '../requestsForRole'
 
 const links: Record<Role, { to: string; label: string; icon: string }[]> = {
   parent: [
@@ -11,6 +12,7 @@ const links: Record<Role, { to: string; label: string; icon: string }[]> = {
   teacher: [
     { to: 'announcements', label: 'Announcements', icon: 'megaphone' },
     { to: 'classes', label: 'My Classes', icon: 'journal-bookmark' },
+    { to: 'transportation', label: 'Transportation Requests', icon: 'bus-front' },
   ],
   admin: [
     { to: 'announcements', label: 'Announcements', icon: 'megaphone' },
@@ -23,7 +25,7 @@ export default function AppNavbar({ role }: { role: Role }) {
   const { user, signOut, requests } = useSession()
   const [open, setOpen] = useState(false)
   const navigate = useNavigate()
-  const pending = requests.filter((r) => r.status === 'pending').length
+  const pending = requestsForRole(requests, role).filter((r) => r.status === 'pending').length
 
   const logout = () => {
     signOut()
@@ -46,7 +48,7 @@ export default function AppNavbar({ role }: { role: Role }) {
               <li className="nav-item" key={l.to}>
                 <NavLink to={`/${role}/${l.to}`} className="nav-link" onClick={() => setOpen(false)}>
                   <i className={`bi bi-${l.icon} me-1`} />{l.label}
-                  {role === 'admin' && l.to === 'transportation' && pending > 0 && (
+                  {l.to === 'transportation' && pending > 0 && (
                     <span className="badge rounded-pill text-bg-danger ms-2">{pending}</span>
                   )}
                 </NavLink>
