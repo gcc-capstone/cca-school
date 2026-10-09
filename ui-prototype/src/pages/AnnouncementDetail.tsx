@@ -3,6 +3,7 @@ import { SourceBadge } from '../components/AnnouncementCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import { announcements } from '../data'
 import { useRole } from '../useRole'
+import PrintButton from '../components/PrintButton'
 
 export default function AnnouncementDetail() {
   const { id } = useParams()
@@ -19,11 +20,20 @@ export default function AnnouncementDetail() {
 
   return (
     <>
-      <button className="btn btn-link px-0 mb-3 text-decoration-none" onClick={() => navigate(-1)}>
-        <i className="bi bi-arrow-left me-1" />Back
-      </button>
+      <div className="d-flex justify-content-between align-items-center mb-3 d-print-none">
+        <button className="btn btn-link px-0 text-decoration-none" onClick={() => navigate(-1)}>
+          <i className="bi bi-arrow-left me-1" />Back
+        </button>
+        <PrintButton />
+      </div>
       <article className="card shadow-sm">
         <div className="card-body p-4">
+          {/* Shows on the printout only */}
+          <div className="d-none d-print-block border-bottom pb-2 mb-3">
+            <strong>Pigeon Connect</strong>
+            <span className="text-body-secondary ms-2">Printed {new Date().toLocaleDateString()}</span>
+          </div>
+
           <div className="d-flex align-items-center gap-2 mb-2">
             <SourceBadge source={a.source} />
             <small className="text-body-secondary">{a.date}</small>
@@ -54,7 +64,7 @@ export default function AnnouncementDetail() {
                   <a key={f.name} href="#" onClick={(e) => e.preventDefault()} className="list-group-item list-group-item-action d-flex align-items-center gap-3">
                     <i className="bi bi-file-earmark-pdf fs-4 text-accent" />
                     <span className="flex-grow-1 text-break">{f.name}<br /><small className="text-body-secondary">{f.size}</small></span>
-                    <i className="bi bi-download" />
+                    <i className="bi bi-download d-print-none" />
                   </a>
                 ))}
               </div>

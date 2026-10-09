@@ -2,11 +2,11 @@ import { useState } from 'react'
 import PageHeader from '../components/PageHeader'
 
 // Module-level so the saved choice survives navigating away and back (prototype only).
-let saved = { app: true, email: false, phone: false, emailAddress: '', phoneNumber: '' }
+let saved = { app: true, email: false, emailAddress: '' }
 
 export default function ContactPreferences() {
   const [form, setForm] = useState(saved)
-  const [errors, setErrors] = useState<{ email?: string; phone?: string; method?: string }>({})
+  const [errors, setErrors] = useState<{ email?: string; method?: string }>({})
   const [justSaved, setJustSaved] = useState(false)
 
   const update = (patch: Partial<typeof form>) => {
@@ -16,9 +16,8 @@ export default function ContactPreferences() {
 
   const save = () => {
     const next: typeof errors = {}
-    if (!form.app && !form.email && !form.phone) next.method = 'Choose at least one way to be contacted.'
+    if (!form.app && !form.email) next.method = 'Choose at least one way to be contacted.'
     if (form.email && !/^\S+@\S+\.\S+$/.test(form.emailAddress)) next.email = 'Enter a valid email address.'
-    if (form.phone && form.phoneNumber.replace(/\D/g, '').length < 10) next.phone = 'Enter a 10-digit phone number.'
     setErrors(next)
     if (Object.keys(next).length > 0) return
     saved = form
@@ -29,7 +28,7 @@ export default function ContactPreferences() {
     <>
       <PageHeader
         title="Contact Preferences"
-        subtitle="Choose how the school should reach you. You can select more than one."
+        subtitle="Choose how the school should reach you. You can select both."
       />
 
       <div className="row">
@@ -80,33 +79,6 @@ export default function ContactPreferences() {
                       onChange={(e) => update({ emailAddress: e.target.value })}
                     />
                     {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-                  </div>
-                )}
-              </div>
-
-              {/* Phone */}
-              <div className="form-check mb-3">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="contact-phone"
-                  checked={form.phone}
-                  onChange={(e) => update({ phone: e.target.checked })}
-                />
-                <label className="form-check-label" htmlFor="contact-phone">
-                  <i className="bi bi-telephone me-1" /><strong>Phone</strong>
-                  <div className="text-body-secondary small">We'll contact you at this number.</div>
-                </label>
-                {form.phone && (
-                  <div className="mt-2">
-                    <input
-                      type="tel"
-                      className={`form-control${errors.phone ? ' is-invalid' : ''}`}
-                      placeholder="(555) 123-4567"
-                      value={form.phoneNumber}
-                      onChange={(e) => update({ phoneNumber: e.target.value })}
-                    />
-                    {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
                   </div>
                 )}
               </div>

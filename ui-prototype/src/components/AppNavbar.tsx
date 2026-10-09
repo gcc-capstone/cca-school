@@ -32,7 +32,7 @@ export default function AppNavbar({ role }: { role: Role }) {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <nav className="navbar navbar-expand-lg bg-white border-bottom sticky-top d-print-none">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" to={`/${role}`}>
           <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" height={36} />
