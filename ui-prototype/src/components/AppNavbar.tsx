@@ -7,6 +7,7 @@ const links: Record<Role, { to: string; label: string; icon: string }[]> = {
   parent: [
     { to: 'announcements', label: 'Announcements', icon: 'megaphone' },
     { to: 'children', label: 'My Children', icon: 'people' },
+    { to: 'contact', label: 'Contact Preferences', icon: 'bell' },
   ],
   teacher: [
     { to: 'announcements', label: 'Announcements', icon: 'megaphone' },

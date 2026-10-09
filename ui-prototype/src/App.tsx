@@ -8,6 +8,7 @@ import AnnouncementsHome from './pages/AnnouncementsHome'
 import AnnouncementsAll from './pages/AnnouncementsAll'
 import AnnouncementDetail from './pages/AnnouncementDetail'
 import ChildrenPage from './pages/ChildrenPage'
+import ContactPreferences from './pages/ContactPreferences'
 import ChildOptions from './pages/ChildOptions'
 import ChangeTransport from './pages/ChangeTransport'
 import MessageTeacher from './pages/MessageTeacher'
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="announcements/:id" element={<AnnouncementDetail />} />
             {/* Parent */}
             <Route path="children" element={<ChildrenPage />} />
+            <Route path="contact" element={<ContactPreferences />} />   
             <Route path="children/:childId" element={<ChildOptions />} />
             <Route path="children/:childId/transport" element={<ChangeTransport />} />
             <Route path="children/:childId/message" element={<MessageTeacher />} />
