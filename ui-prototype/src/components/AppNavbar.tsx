@@ -14,6 +14,8 @@ const links: Record<Role, { to: string; label: string; icon: string }[]> = {
   ],
   admin: [
     { to: 'announcements', label: 'Announcements', icon: 'megaphone' },
+    { to: 'classes', label: 'Classes', icon: 'journal-bookmark' },
+    { to: 'students', label: 'Students', icon: 'people' },
     { to: 'transportation', label: 'Transportation Requests', icon: 'bus-front' },
     { to: 'send', label: 'Send Announcement', icon: 'send' },
   ],

@@ -8,12 +8,13 @@ export default function ClassRoster() {
   const { classId } = useParams()
   const role = useRole()
   const cls = classes.find((c) => c.id === classId)
-  if (!cls) return <BackLink to={`/${role}/classes`} label="Class not found – back to My Classes" />
+  const listLabel = role === 'admin' ? 'All Classes' : 'My Classes'
+  if (!cls) return <BackLink to={`/${role}/classes`} label={`Class not found – back to ${listLabel}`} />
   const roster = students.filter((s) => cls.studentIds.includes(s.id))
 
   return (
     <>
-      <BackLink to={`/${role}/classes`} label="Back to My Classes" />
+      <BackLink to={`/${role}/classes`} label={`Back to ${listLabel}`} />
       <PageHeader
         title={`${cls.name} – ${cls.grade}`}
         subtitle="Select a student to send an announcement to their parents."
