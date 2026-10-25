@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import PageHeader, { BackLink } from '../components/PageHeader'
-import { activities, days, dayNames, modeInfo, modes, sameEntry, weekDates, currentDay } from '../lib'
+import { days, dayNames, modeInfo, modes, sameEntry, weekDates, currentDay } from '../lib'
 import { useStore } from '../store'
 import { useRole } from '../useRole'
 import type { Day, DayPlan, Mode, WeekPlan } from '../types'
@@ -81,7 +81,7 @@ export default function ChangeTransport() {
           <div className="d-flex flex-column flex-sm-row justify-content-between gap-2 mb-3">
             <div>
               <h2 className="h5 mb-1">1. Pick the days</h2>
-              <p className="text-body-secondary small mb-0">Each day shows how {who} currently get{all ? '' : 's'} home. A pencil marks days you changed.</p>
+              <p className="text-body-secondary small mb-0">Highlighted days are the ones you’re changing. Tap a day to select or deselect it. A pencil marks days you changed.</p>
             </div>
             <div className="d-flex gap-2 align-items-start">
               <button type="button" className="btn btn-outline-secondary btn-sm" onClick={() => { setApplied(false); setSelected([...days]) }}>All weekdays</button>
@@ -96,12 +96,13 @@ export default function ChangeTransport() {
               return (
                 <div className="col" key={d}>
                   <button type="button" aria-pressed={on} onClick={() => toggleDay(d)}
-                    className={`btn w-100 h-100 p-1 p-sm-2 text-center border-${on ? '4 border-dark' : `2 border-${info.color}`} bg-${info.color}-subtle`}>
+                    className={`btn w-100 h-100 p-1 p-sm-2 text-center position-relative ${on ? `border-4 border-${info.color} bg-${info.color}-subtle shadow-sm` : 'border bg-body-tertiary text-body-secondary'}`}>
+                    {on && <i className="bi bi-check-circle-fill position-absolute top-0 end-0 m-1 small" />}
                     <span className="d-block fw-semibold">
                       {d}{!sameEntry(draft[d], base.plan[d]) && <i className="bi bi-pencil-fill ms-1 small" />}
                     </span>
                     <span className="d-block small text-body-secondary mb-1">{dates[d].toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
-                    <i className={`bi bi-${info.icon} fs-5`} />
+                    <i className={`bi bi-${info.icon} fs-5${on ? '' : ` text-${info.color}`}`} />
                     <span className="d-none d-sm-block small">{info.label}</span>
                     {detail && <span className="d-none d-sm-block small text-body-secondary text-truncate">{detail}</span>}
                   </button>
@@ -157,10 +158,7 @@ export default function ChangeTransport() {
           {mode === 'extracurricular' && (
             <div className="mb-3">
               <label className="form-label fw-semibold" htmlFor="activity">Which extra-curricular activity?</label>
-              <select id="activity" className="form-select" required value={activity} onChange={(e) => setActivity(e.target.value)}>
-                <option value="">Select an activity…</option>
-                {activities.map((a) => <option key={a}>{a}</option>)}
-              </select>
+              <input id="activity" className="form-control" type="text" required placeholder="e.g. Soccer practice" value={activity} onChange={(e) => setActivity(e.target.value)} />
             </div>
           )}
 

@@ -75,7 +75,7 @@ export default function AppNavbar({ role }: { role: Role }) {
                   <NavLink
                     to={`/${role}/${l.to}`}
                     onClick={() => setOpen(false)}
-                    className={({ isActive }) => `nav-link px-3 rounded text-nowrap${isActive ? ' bg-secondary-subtle text-dark fw-bold' : ' text-white'}`}
+                    className={({ isActive }) => `nav-link px-3 rounded text-nowrap${isActive ? ' bg-white bg-opacity-25 text-white fw-bold' : ' text-white'}`}
                   >
                     <i className={`bi bi-${l.icon} me-1`} />{l.label}
                     {b && b.count > 0 && <span className={`badge rounded-pill text-bg-${b.tone} ms-2`}>{b.count}</span>}

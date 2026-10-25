@@ -34,3 +34,8 @@ See the change list in the project hand-off notes. The old style-reference page 
 - Teachers and admins have Contact preferences in Profile (per account). Emergency contacts stay parent-only.
 - Admin: opening a class lists its previous announcements (teacher announcements sent to a class are tied to it).
 - Teacher: Messages has a **New message** button opening a popup with My students (grouped by class, class filter, search) and School staff (grouped Administrators / Teachers, role filter, search).
+
+## Round 5 changes
+- Active nav link is white text on a translucent highlight (readable in light and dark).
+- Change-transportation calendar: selected (highlighted) days are the ones being changed; unselected days are muted.
+- Extra-curricular activity is a free-text box.
