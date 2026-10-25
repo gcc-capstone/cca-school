@@ -1,26 +1,20 @@
-/* Minimal overrides: Pigeon Connect palette taken from the logo. */
-:root {
-  --bs-primary: #29528a;
-  --bs-primary-rgb: 41, 82, 138;
-  --bs-link-color: #29528a;
-  --bs-link-color-rgb: 41, 82, 138;
-  --bs-link-hover-color: #1f3f6a;
-  --bs-link-hover-color-rgb: 31, 63, 106;
-  --pc-accent: #f2806a;
-}
-body { background-color: var(--bs-tertiary-bg); }
+/* Theme hooks only. Bootstrap buttons read their colors from component variables,
+   so these map them to the active theme (set from the Appearance panel). */
+:root { --pc-nav: #14284b; --pc-primary-dark: #1f4270; --pc-accent: #f2806a; }
+.pc-nav { background-color: var(--pc-nav); }
 .btn-primary {
-  --bs-btn-bg: #29528a; --bs-btn-border-color: #29528a;
-  --bs-btn-hover-bg: #1f3f6a; --bs-btn-hover-border-color: #1f3f6a;
-  --bs-btn-active-bg: #1a3558; --bs-btn-active-border-color: #1a3558;
-  --bs-btn-disabled-bg: #29528a; --bs-btn-disabled-border-color: #29528a;
+  --bs-btn-color: #fff; --bs-btn-hover-color: #fff; --bs-btn-active-color: #fff; --bs-btn-disabled-color: #fff;
+  --bs-btn-bg: var(--bs-primary); --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--pc-primary-dark); --bs-btn-hover-border-color: var(--pc-primary-dark);
+  --bs-btn-active-bg: var(--pc-primary-dark); --bs-btn-active-border-color: var(--pc-primary-dark);
+  --bs-btn-disabled-bg: var(--bs-primary); --bs-btn-disabled-border-color: var(--bs-primary);
 }
 .btn-outline-primary {
-  --bs-btn-color: #29528a; --bs-btn-border-color: #29528a;
-  --bs-btn-hover-bg: #29528a; --bs-btn-hover-border-color: #29528a;
-  --bs-btn-active-bg: #29528a; --bs-btn-active-border-color: #29528a;
+  --bs-btn-color: var(--bs-primary); --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff; --bs-btn-hover-bg: var(--bs-primary); --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-color: #fff; --bs-btn-active-bg: var(--bs-primary); --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-disabled-color: var(--bs-primary); --bs-btn-disabled-border-color: var(--bs-primary);
 }
-.form-check-input:checked { background-color: #29528a; border-color: #29528a; }
-.nav-link.active { color: #29528a !important; font-weight: 600; }
+.form-check-input:checked { background-color: var(--bs-primary); border-color: var(--bs-primary); }
 .card-link:hover { box-shadow: var(--bs-box-shadow) !important; border-color: var(--pc-accent); }
 .text-accent { color: var(--pc-accent); }

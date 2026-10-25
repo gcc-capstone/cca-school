@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 
 const choices = [
-  { role: 'parent', title: 'Parent', icon: 'house-heart', text: 'See announcements, update pick-up plans, and message teachers.' },
-  { role: 'teacher', title: 'Teacher', icon: 'journal-bookmark', text: 'View your classes and send announcements to families.' },
-  { role: 'admin', title: 'Administrator', icon: 'building', text: 'Review transportation changes and message the whole school.' },
+  { role: 'parent', title: 'Parent', icon: 'house-heart' },
+  { role: 'teacher', title: 'Teacher', icon: 'journal-bookmark' },
+  { role: 'admin', title: 'Administrator', icon: 'building' },
 ]
 
 export default function Landing() {
@@ -13,20 +13,15 @@ export default function Landing() {
       <h1 className="display-5 fw-bold text-primary">Pigeon Connect</h1>
       <p className="lead text-body-secondary mb-5">Keeping families, teachers, and staff connected.</p>
       <h2 className="h5 mb-3">I am a…</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+      <div className="list-group shadow-sm mx-auto text-start w-100" style={{ maxWidth: 360 }}>
         {choices.map((c) => (
-          <div className="col" key={c.role}>
-            <Link to={`/signin/${c.role}`} className="card card-link h-100 text-decoration-none text-body shadow-sm">
-              <div className="card-body py-4">
-                <i className={`bi bi-${c.icon} display-5 text-primary`} />
-                <h3 className="h5 mt-2">{c.title}</h3>
-                <p className="text-body-secondary mb-0">{c.text}</p>
-              </div>
-            </Link>
-          </div>
+          <Link key={c.role} to={`/signin/${c.role}`} className="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3">
+            <i className={`bi bi-${c.icon} fs-3 text-primary`} />
+            <span className="fw-semibold fs-5 flex-grow-1">{c.title}</span>
+            <i className="bi bi-chevron-right text-body-secondary" />
+          </Link>
         ))}
       </div>
-      <p className="mt-5 small"><Link to="/style">Style reference</Link></p>
     </div>
   )
 }
