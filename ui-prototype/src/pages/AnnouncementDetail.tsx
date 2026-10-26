@@ -1,15 +1,23 @@
+import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { SourceBadge } from '../components/AnnouncementCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
-import { announcements } from '../data'
+import { fmtDate, sanitizeHtml } from '../lib'
+import { useStore } from '../store'
 import { useRole } from '../useRole'
-import PrintButton from '../components/PrintButton'
 
 export default function AnnouncementDetail() {
   const { id } = useParams()
   const role = useRole()
   const navigate = useNavigate()
+  const { announcements, markRead } = useStore()
   const a = announcements.find((x) => x.id === Number(id))
+  const found = a?.id
+
+  useEffect(() => {
+    if (role === 'parent' && found !== undefined) markRead(found)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [role, found])
 
   if (!a) {
     return <p>This announcement could not be found. <a href={`#/${role}/announcements`}>Back to announcements</a></p>
@@ -24,23 +32,22 @@ export default function AnnouncementDetail() {
         <button className="btn btn-link px-0 text-decoration-none" onClick={() => navigate(-1)}>
           <i className="bi bi-arrow-left me-1" />Back
         </button>
-        <PrintButton />
+        <button className="btn btn-outline-secondary btn-sm" onClick={() => window.print()}>
+          <i className="bi bi-printer me-1" />Print
+        </button>
       </div>
       <article className="card shadow-sm">
         <div className="card-body p-4">
-          {/* Shows on the printout only */}
-          <div className="d-none d-print-block border-bottom pb-2 mb-3">
-            <strong>Pigeon Connect</strong>
-            <span className="text-body-secondary ms-2">Printed {new Date().toLocaleDateString()}</span>
-          </div>
-
           <div className="d-flex align-items-center gap-2 mb-2">
             <SourceBadge source={a.source} />
-            <small className="text-body-secondary">{a.date}</small>
           </div>
           <h1 className="h3">{a.title}</h1>
-          <p className="text-body-secondary">Posted by {a.author}</p>
-          {a.body.map((p, i) => <p key={i}>{p}</p>)}
+          <p className="text-body-secondary mb-1">From {a.author} · Sent to {a.audience}</p>
+          <p className="mb-3">
+            <i className="bi bi-calendar-event me-1" /><strong>Event date:</strong> {fmtDate(a.eventDate)}
+            <span className="text-body-secondary ms-3">Posted {fmtDate(a.posted)}</span>
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(a.bodyHtml) }} />
 
           {images.length > 0 && (
             <>
@@ -64,7 +71,7 @@ export default function AnnouncementDetail() {
                   <a key={f.name} href="#" onClick={(e) => e.preventDefault()} className="list-group-item list-group-item-action d-flex align-items-center gap-3">
                     <i className="bi bi-file-earmark-pdf fs-4 text-accent" />
                     <span className="flex-grow-1 text-break">{f.name}<br /><small className="text-body-secondary">{f.size}</small></span>
-                    <i className="bi bi-download d-print-none" />
+                    <i className="bi bi-download" />
                   </a>
                 ))}
               </div>

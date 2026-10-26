@@ -1,10 +1,10 @@
 import { Navigate, Outlet } from 'react-router-dom'
 import AppNavbar from '../components/AppNavbar'
-import { useSession } from '../session'
+import { useStore } from '../store'
 import { isRole, useRole } from '../useRole'
 
 export default function DashboardLayout() {
-  const { user } = useSession()
+  const { user } = useStore()
   const role = useRole()
   if (!isRole(role) || !user || user.role !== role) return <Navigate to="/" replace />
   return (
