@@ -1,0 +1,15 @@
+{
+  "name": "pigeon-connect",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node scripts/build-ts.mjs",
+    "watch": "node scripts/build-ts.mjs --watch",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^6.0.3"
+  }
+}

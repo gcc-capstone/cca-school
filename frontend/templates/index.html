@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Hello World | Pigeon Connect{% endblock %}
+
+{% block content %}
+<section class="bg-primary bg-gradient text-white border-top border-white border-opacity-10">
+  <div class="container py-5">
+    <div class="row align-items-center g-5 py-lg-4">
+      <div class="col-lg-7 text-center text-lg-start">
+        <span class="badge rounded-pill bg-white bg-opacity-25 px-3 py-2 mb-3">
+          <i class="bi bi-rocket-takeoff me-1"></i> Flask base app
+        </span>
+        <h1 class="display-3 fw-bold mb-3">Hello, World!</h1>
+        <p class="lead text-white text-opacity-75 mb-4">
+          Pigeon Connect is up and running. This page is rendered by Flask from
+          <code class="text-white">frontend/templates</code> and styled with Bootstrap.
+        </p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-2">
+          <button id="health-check" type="button" class="btn btn-light btn-lg px-4">
+            <i class="bi bi-activity me-1"></i> Check server
+          </button>
+          <a href="https://getbootstrap.com/docs/5.3/" class="btn btn-outline-light btn-lg px-4" target="_blank" rel="noopener">
+            <i class="bi bi-bootstrap me-1"></i> Bootstrap docs
+          </a>
+        </div>
+        <p id="health-result" class="small mt-3 mb-0 text-white text-opacity-75" role="status" aria-live="polite"></p>
+      </div>
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Pigeon Connect logo"
+             class="img-fluid bg-white rounded-4 shadow-lg p-4" width="240" height="240">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row g-4">
+    {% for icon, heading, body in [
+      ("hdd-stack", "Backend", "Blueprints live in backend/routes and are registered in backend/routes/__init__.py."),
+      ("filetype-ts", "TypeScript", "Source in frontend/typescript compiles and minifies into frontend/static/js."),
+      ("shield-lock", "Secrets", "The SECRET_KEY in .env and pepper.bin are created automatically on first run."),
+    ] %}
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-inline-flex rounded-3 bg-primary-subtle text-primary fs-4 px-3 py-2 mb-3">
+            <i class="bi bi-{{ icon }}"></i>
+          </div>
+          <h2 class="h5 fw-semibold">{{ heading }}</h2>
+          <p class="text-body-secondary mb-0">{{ body }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
