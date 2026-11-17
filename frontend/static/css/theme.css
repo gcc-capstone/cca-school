@@ -1,0 +1,14 @@
+/* Brand colors only: points Bootstrap's own variables at Pigeon Blue so
+   utilities like bg-primary, text-primary and links use it. Everything else
+   is plain Bootstrap classes in the templates. */
+:root {
+  --bs-primary: #29528a;
+  --bs-primary-rgb: 41, 82, 138;
+  --bs-primary-text-emphasis: #10213a;
+  --bs-primary-bg-subtle: #d4dce8;
+  --bs-primary-border-subtle: #a9bad0;
+  --bs-link-color: #29528a;
+  --bs-link-color-rgb: 41, 82, 138;
+  --bs-link-hover-color: #1f3f6a;
+  --bs-link-hover-color-rgb: 31, 63, 106;
+}
